@@ -1,1 +1,0 @@
-{"version":3,"sources":["thirdperson/config.cljs"],"mappings":";AAEA,AAAKA,kCACMC","names":["thirdperson.config/debug?","js/goog.DEBUG"],"sourcesContent":["(ns thirdperson.config)\n\n(def debug?\n  ^boolean goog.DEBUG)\n"]}
