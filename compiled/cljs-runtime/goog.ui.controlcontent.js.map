@@ -1,0 +1,9 @@
+{
+"version":3,
+"file":"goog.ui.controlcontent.js",
+"lineCount":3,
+"mappings":"AASAA,IAAKC,CAAAA,OAAL,CAAa,wBAAb,CAAA;AAQAD,IAAKE,CAAAA,EAAGC,CAAAA,cAAR;;",
+"sources":["goog/ui/controlcontent.js"],
+"sourcesContent":["/**\n * @license\n * Copyright The Closure Library Authors.\n * SPDX-License-Identifier: Apache-2.0\n */\n\n/**\n * @fileoverview Type declaration for control content.\n */\ngoog.provide('goog.ui.ControlContent');\n\n\n/**\n * Type declaration for text caption or DOM structure to be used as the content\n * of {@link goog.ui.Control}s.\n * @typedef {string|Node|Array<!Node>|NodeList<!Node>}\n */\ngoog.ui.ControlContent;\n"],
+"names":["goog","provide","ui","ControlContent"]
+}

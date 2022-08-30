@@ -1,0 +1,1 @@
+{"version":3,"sources":["thirdperson/subs.cljs"],"mappings":";AAIA,2DAAA,3DAACA,iMAEC,WAAKC;AAAL,AACE,OAAA,mFAAOA","names":["re_frame.core.reg_sub","db"],"sourcesContent":["(ns thirdperson.subs\n  (:require\n    [re-frame.core :as re-frame]))\n\n(re-frame/reg-sub\n  ::name\n  (fn [db]\n    (:name db)))\n"]}

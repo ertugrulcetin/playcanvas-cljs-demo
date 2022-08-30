@@ -1,0 +1,17 @@
+{:nrepl {:port 8777}
+
+ :source-paths ["src" "test"]
+
+ :dependencies [[applied-science/js-interop "0.3.3"]
+                [net.sekao/odoyle-rules "0.12.0"]]
+
+ :dev-http {8280 "resources/public"
+            8290 "target/browser-test"}
+
+ :builds {:app {:target :browser
+                :output-dir "../compiled"
+                :asset-path "/compiled"
+                :modules {:app {:init-fn thirdperson.entity/init}}
+                :devtools {:preloads []}
+                :dev {:compiler-options {:closure-defines {}}}
+                :release {:build-options {:ns-aliases {}}}}}}

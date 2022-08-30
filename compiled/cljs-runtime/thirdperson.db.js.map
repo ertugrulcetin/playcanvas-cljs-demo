@@ -1,0 +1,1 @@
+{"version":3,"sources":["thirdperson/db.cljs"],"mappings":";AAEA,4BAAA,2CAAA,qDAAA,5HAAKA","names":["thirdperson.db/default-db"],"sourcesContent":["(ns thirdperson.db)\n\n(def default-db\n  {:name \"re-frame\"})\n"]}

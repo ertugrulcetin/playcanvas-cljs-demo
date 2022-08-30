@@ -1,0 +1,9 @@
+{
+"version":3,
+"file":"goog.storage.errorcode.js",
+"lineCount":3,
+"mappings":"AAUAA,IAAKC,CAAAA,OAAL,CAAa,wBAAb,CAAA;AAOAD,IAAKE,CAAAA,OAAQC,CAAAA,SAAb,GAAyB,CACvBC,cAAe,wCADQ,EAEvBC,iBAAkB,2CAFK,CAAzB;;",
+"sources":["goog/storage/errorcode.js"],
+"sourcesContent":["/**\n * @license\n * Copyright The Closure Library Authors.\n * SPDX-License-Identifier: Apache-2.0\n */\n\n/**\n * @fileoverview Defines errors to be thrown by the storage.\n */\n\ngoog.provide('goog.storage.ErrorCode');\n\n\n/**\n * Errors thrown by the storage.\n * @enum {string}\n */\ngoog.storage.ErrorCode = {\n  INVALID_VALUE: 'Storage: Invalid value was encountered',\n  DECRYPTION_ERROR: 'Storage: The value could not be decrypted'\n};\n"],
+"names":["goog","provide","storage","ErrorCode","INVALID_VALUE","DECRYPTION_ERROR"]
+}

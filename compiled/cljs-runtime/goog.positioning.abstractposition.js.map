@@ -1,0 +1,9 @@
+{
+"version":3,
+"file":"goog.positioning.abstractposition.js",
+"lineCount":9,
+"mappings":"AAUAA,IAAKC,CAAAA,OAAL,CAAa,mCAAb,CAAA;AAEAD,IAAKE,CAAAA,WAAL,CAAiB,eAAjB,CAAA;AACAF,IAAKE,CAAAA,WAAL,CAAiB,gBAAjB,CAAA;AACAF,IAAKE,CAAAA,WAAL,CAAiB,yBAAjB,CAAA;AASAF,IAAKG,CAAAA,WAAYC,CAAAA,gBAAjB,GAAoCC,QAAQ,EAAG;CAA/C;AAaAL,IAAKG,CAAAA,WAAYC,CAAAA,gBAAiBE,CAAAA,SAAUC,CAAAA,UAA5C,GAAyDC,QAAQ,CAC7DC,cAD6D,EAC7CC,MAD6C,EACrCC,UADqC,EACzBC,iBADyB,CACN;CAD3D;;",
+"sources":["goog/positioning/abstractposition.js"],
+"sourcesContent":["/**\n * @license\n * Copyright The Closure Library Authors.\n * SPDX-License-Identifier: Apache-2.0\n */\n\n/**\n * @fileoverview Abstract base class for positioning implementations.\n */\n\ngoog.provide('goog.positioning.AbstractPosition');\n\ngoog.requireType('goog.math.Box');\ngoog.requireType('goog.math.Size');\ngoog.requireType('goog.positioning.Corner');\n\n\n\n/**\n * Abstract position object. Encapsulates position and overflow handling.\n *\n * @constructor\n */\ngoog.positioning.AbstractPosition = function() {};\n\n\n/**\n * Repositions the element. Abstract method, should be overloaded.\n *\n * @param {Element} movableElement Element to position.\n * @param {goog.positioning.Corner} corner Corner of the movable element that\n *     should be positioned adjacent to the anchored element.\n * @param {goog.math.Box=} opt_margin A margin specified in pixels.\n * @param {goog.math.Size=} opt_preferredSize PreferredSize of the\n *     movableElement.\n */\ngoog.positioning.AbstractPosition.prototype.reposition = function(\n    movableElement, corner, opt_margin, opt_preferredSize) {};\n"],
+"names":["goog","provide","requireType","positioning","AbstractPosition","goog.positioning.AbstractPosition","prototype","reposition","goog.positioning.AbstractPosition.prototype.reposition","movableElement","corner","opt_margin","opt_preferredSize"]
+}

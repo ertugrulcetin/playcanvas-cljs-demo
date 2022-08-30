@@ -1,0 +1,19 @@
+{
+  "name": "thirdperson",
+  "scripts": {
+    "ancient": "clojure -Sdeps '{:deps {com.github.liquidz/antq {:mvn/version \"RELEASE\"}}}' -m antq.core",
+    "watch": "npx shadow-cljs watch app browser-test karma-test",
+    "release": "npx shadow-cljs release app",
+    "clean": "rm -rf .shadow-cljs resources/public/js/compiled target",
+    "clean-all": "rm -rf .shadow-cljs resources/public/js/compiled node_modules package-lock.json target",
+    "build-report": "npx shadow-cljs run shadow.cljs.build-report app target/build-report.html"
+  },
+  "dependencies": {
+    "highlight.js": "11.5.1",
+    "react": "17.0.2",
+    "react-dom": "17.0.2"
+  },
+  "devDependencies": {
+    "shadow-cljs": "2.19.0"
+  }
+}
