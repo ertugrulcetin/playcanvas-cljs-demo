@@ -9,8 +9,8 @@
             8290 "target/browser-test"}
 
  :builds {:app {:target :browser
-                :output-dir "../compiled"
-                :asset-path "/compiled"
+                :output-dir "../"
+                :asset-path "/"
                 :modules {:app {:init-fn thirdperson.entity/init}}
                 :devtools {:preloads []}
                 :dev {:compiler-options {:closure-defines {}}}
